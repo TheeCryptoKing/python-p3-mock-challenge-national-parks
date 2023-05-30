@@ -18,31 +18,31 @@ class Trip:
         national_park.visitors(visitor)
 
     # not needed
-    # @property
-    # def visitor(self):
-    #     return self._visitor
+    @property
+    def visitor(self):
+        return self._visitor
   
-    # @visitor.setter
-    # def visitor(self, visitor):
-    #     from classes.visitor import Visitor
+    @visitor.setter
+    def visitor(self, visitor):
+        from classes.visitor import Visitor
 
-    #     if isinstance(visitor, Visitor):
-    #         self._visitor = visitor
-    #     else:
-    #         raise Exception 
+        if isinstance(visitor, Visitor):
+            self._visitor = visitor
+        else:
+            raise Exception 
 
-    # @property
-    # def national_park(self):
-    #     return self._national_park 
+    @property
+    def national_park(self):
+        return self._national_park 
  
-    # @national_park.setter
-    # def national_park(self, national_park):
-    #     from classes.national_park import NationalPark
+    @national_park.setter
+    def national_park(self, national_park):
+        from classes.national_park import NationalPark
 
-    #     if isinstance(national_park, NationalPark):
-    #         self._national_park = national_park
-    #     else:
-    #         raise Exception
+        if isinstance(national_park, NationalPark):
+            self._national_park = national_park
+        else:
+            raise Exception
         
     
 
